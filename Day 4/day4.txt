@@ -1,0 +1,44 @@
+1.KUBERNETES:
+
+   - was donated to the cloud native computing foundation.a neural home for open-source cloud-native projects,in july 2015
+   -In 2014,Google open-sourced version of brog is called Kubernetes.
+  
+
+2.Minikube,kubernetes - only deployment process
+
+3.eks,aks,kuberdocs-container
+
+4.master and worker(Slave) is connected by api server(connect),scheduler(deploy),controller-manager,etcd.
+
+Control plane:
+   The control plane's components make global decisions about the desicion
+
+Api server 
+   - central control point for all interaction with the cluster
+
+Scheduler 
+   - responsible for assigning workloads
+
+Controller Manager
+   - Managing tool
+
+etcd
+    -distributed key-value store used by Kubernetes to store the cluster state and configuration data.
+
+pod 
+    -running container
+    -simplest unit of deployment
+    -pod name-container name
+
+Replica set
+     -ensure specified number of pod replicas are running all the time. 
+
+Namespace
+     -is a virtual cluster or logical partition within a cluster that provides a way to organise and isolate resources
+
+
+
+K8s Pod Commands: (shortname = po)
+1.Create pod using run command 
+   kubectl run 
+safrinbaragna/my-app:latest
