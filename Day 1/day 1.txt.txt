@@ -1,0 +1,13 @@
+DOCKER COMMANDS
+
+docker images
+docker build -t sampleday1 .//building an images
+docker run --rm sampleday1
+docker ps //to see running container
+docker exec -it fb647d8be0de ls /usr/local/tomcat/webapps/  
+docker restart fb647d8be0de // this id is generated when the container is created
+http://localhost:8080/maven-web-app///by default 8080
+
+docker cp <>//docker copy cmd
+docker run -itd -P <img id>//run images
+docker exec -it <> /bin/bash //to check inside running the container
